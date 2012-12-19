@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>{{ title }}</title>
+<link rel="stylesheet" type="text/css" href="/style/shared.css">
+<link rel="stylesheet" type="text/css" href="/style/support.css">
+
+</head>
+
+<body id="support-item">
+
+<!-- Hi, nerds. I love you.-->
+
+{{ content }}
+
+<div id="bottom-buttons">Back to <a href="/support/">support</a></div>
+
+</body>
+
+</html>

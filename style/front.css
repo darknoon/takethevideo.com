@@ -1,0 +1,219 @@
+/* @override 
+	http://localhost:4000/style/front.css */
+
+/* @group General */
+
+@font-face {font-family: 'Museo Sans';src: url('webfonts/18BB0F_0.eot');src: url('webfonts/18BB0F_0.eot?#iefix') format('embedded-opentype'),url('webfonts/18BB0F_0.woff') format('woff'),url('webfonts/18BB0F_0.ttf') format('truetype');}
+
+html {
+	padding: 0;
+	margin: 0;	
+}
+
+body {
+	background-color: #fcfcfc;
+	font: 18px/24px "Museo Sans", sans-serif;
+	color: #808080;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+	font-size: 118px;
+	margin: 110px 0 45px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 33px;
+	padding: 0;
+}
+
+/* @end */
+
+/* @group Filter preview boxes */
+
+div.video-box {
+	position: relative;
+	text-align: center;
+	width: 332px;
+	float: left;
+	margin: 5px;
+}
+
+div.video-box a:link {
+	color: #7a7b7a;
+	text-decoration: none;
+	text-color: inherit;
+}
+
+div.video-box a:visited {
+	color: #7a7b7a;
+	text-decoration: none;
+	text-color: inherit;
+}
+
+div.video-box a:hover {
+	color: black;
+}
+
+div.video-box img {
+	-moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+}
+
+div.video-box:hover .overlay {
+	background: -moz-linear-gradient(315deg, rgba(183, 183, 183, 0.21) 0%, rgba(0, 0, 0, 0.08) 51.2%, rgba(255, 255, 255, 0.39) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, from(rgba(183, 183, 183, 0.21)), color-stop(0.512, rgba(0, 0, 0, 0.08)), to(rgba(255, 255, 255, 0.39)));	
+}
+
+
+div.video-box h3 {
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+div.video-box .overlay {
+	display: block;
+	pointer-events: none;
+	position: absolute;
+	z-index: 1000;
+	width: 332px;
+	height: 187px;
+	top: 0;
+	left: 0;
+	background: -moz-linear-gradient(315deg, rgba(183, 183, 183, 0.21) 0%, rgba(0, 0, 0, 0.08) 51.2%, rgba(0, 0, 0, 0.39) 100%) no-repeat center center,;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgba(183, 183, 183, 0.21)), color-stop(0.512, rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.39))) no-repeat center center,;
+}
+
+div.video-box .overlay:after {
+	content: " ";
+	display: block;
+	background: url(VideoPlay.png) no-repeat center center, transparent;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+div.video-box:hover .overlay:after {
+	opacity: 1.0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+	div.video-box .overlay:after {
+		background-image: url('VideoPlay@2x.png');
+		background-size: 100px 100px;
+	}
+}
+
+
+div#videos {
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+div#videos-container {
+	padding-top: 50px;
+	height: 260px;
+	width: 1026px; /* 3*(332 + 4)*/
+	margin: 0 auto;	
+}
+
+div#videos-before {
+	position: absolute;
+	top: 0;
+	background: url(GradientThingTop.png) no-repeat top center;
+	height: 63px;
+	width: 100%;
+	margin: auto;
+}
+
+div#videos-after {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: url(GradientThing.png) no-repeat top center;
+	height: 63px;
+}
+
+
+/* @end */
+
+#appstore {
+	padding: 0 20px 30px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+#appstore a {
+	text-indent: -10000px;
+	display: block;
+	margin: auto;
+	background: url(AppStore.png);
+	width: 237px;
+	height: 68px;
+}
+
+#appstore a:link {
+	opacity: 0.5;
+}
+
+#appstore a:hover {
+	opacity: 1.0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+#appstore a {
+	background: url(AppStore@2x.png);
+	background-size: 237px 68px;
+}
+}
+
+/* @group Phone */
+
+#phone {
+	margin: auto;
+	position: relative;
+	width: 906px;
+	height: 436px;
+}
+
+#phone #phone-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(iPhoneImage.png) no-repeat;
+	width: 100%;	
+	height: 100%;
+}
+
+#phone #slideshow {
+	position: relative;
+	top: 33px;
+	left: 134px;
+	background: black;
+}
+
+#phone #slideshow > div { 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+
+/* @end */
+
+p {
+	width: 600px;
+	margin: 20px auto 24px;
+}
+

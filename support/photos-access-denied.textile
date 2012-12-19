@@ -1,0 +1,19 @@
+---
+layout: support-item
+title: Location Access Denied
+---
+
+h1. Error: Photos access denied
+
+h2. What causes this error?
+
+Most likely, you declined to give Take access to your photos when starting for the first time.
+
+A setting on your phone has prevented Take from being able to save videos. To prevent your shooting a video and not being able to save it (losing the video), Take won't shoot videos until the setting is corrected.
+
+h2. How to fix it
+
+* Open the settings app from your home screen
+* Navigate to Privacy
+* Tap on Photos
+* Flip the Take switch to On

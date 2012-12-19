@@ -1,0 +1,19 @@
+---
+layout: support-item
+title: Photos access restricted
+---
+
+h1. Error: Photos access restricted
+
+h2. What causes this error?
+
+A setting on your phone has prevented Take from being able to save videos. To prevent shooting a video and not being able to save it (losing the video), Take won't shoot videos until the setting is corrected.
+
+This restriction may have been put in place by an administrator or parent on your iOS device. In this case you should contact this person for assistance.
+
+h2. How to fix it
+
+* Open the settings app from your home screen
+* Navigate to General
+* Tap on Restrictions
+* Flip the Photos switch to Off

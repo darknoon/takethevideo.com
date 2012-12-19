@@ -1,0 +1,30 @@
+---
+layout: support-item
+title: Location Access Restricted
+---
+
+h1. Error: Location access restricted
+
+h2. What causes this error?
+
+A setting on your phone has prevented Take from being able to save videos. To prevent your shooting a video and not being able to save it (losing the video), Take won't shoot videos until the setting is corrected.
+
+This restriction may have been put in place by an administrator or parent on your iOS device. In this case you should contact this person for assistance.
+
+On iOS 5, access to Photos is controlled by Location Services because photos and videos may contain information about the location in which they were taken.
+
+On iOS 6, location information is now segregated from access to the videos themselves, so if you do not want to allow location services on your device, I recommend you upgrade to iOS 6.0 or later.
+
+
+h2. How to fix it
+
+* Open the settings app from your home screen
+* Navigate to General
+* Tap on Restrictions
+* Flip the Photos switch to Off
+
+h2. How to upgrade to iOS 6.0 or later
+* Connect your device to a computer with iTunes installed
+* Follow the directions on screen to back up and update your device
+
+Alternately, you can bring your device to an Apple Store for an upgrade.
